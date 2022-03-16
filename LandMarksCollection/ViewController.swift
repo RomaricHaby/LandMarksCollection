@@ -147,7 +147,29 @@ class ViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "showDetailLandMark"){
             if let destination = segue.destination as? DetailLandMarkViewController{
-                destination.landmark = DataModel.sharedInstance.landMarksList[collectionView.indexPath(for: sender as! UICollectionViewCell)!.row]
+                
+                guard let indexPath = collectionView.indexPath(for: sender as! UICollectionViewCell), let section = diffableDataSource.sectionIdentifier(for: indexPath.section) else {
+                          return
+                        }
+                
+                switch section{
+                    case Section.mountains :
+                    destination.landmark = DataModel.sharedInstance.getLandMarksMountains()[collectionView.indexPath(for: sender as! UICollectionViewCell)!.row]
+                    break
+                    
+                case Section.rivers :
+                    destination.landmark = DataModel.sharedInstance.getLandMarksRivers()[collectionView.indexPath(for: sender as! UICollectionViewCell)!.row]
+                break
+                    
+                case Section.lakes :
+                    destination.landmark = DataModel.sharedInstance.getLandMarksLakes()[collectionView.indexPath(for: sender as! UICollectionViewCell)!.row]
+                break
+                    
+            
+                case .largeCell:
+                    destination.landmark = DataModel.sharedInstance.getFavLandMarks()[collectionView.indexPath(for: sender as! UICollectionViewCell)!.row]
+                }
+                
             }
         }
     }
