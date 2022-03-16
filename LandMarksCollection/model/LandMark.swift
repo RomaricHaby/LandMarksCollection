@@ -24,7 +24,7 @@ struct LandMark : Decodable, Hashable{
     }
     
     
-    let name : String
+    var name : String
     let category : Category
     let city : String
     let state: String

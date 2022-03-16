@@ -50,14 +50,6 @@ class ViewController: UICollectionViewController {
                 return cell
             }
         })
-        
-        
-        /*diffableDataSource.supplementaryViewProvider = { collectionView, elementKind, indexPath in
-            switch elementKind{
-            case UICollectionView.elementKindSectionHeader:
-                let header = coll
-            }
-        }*/
     }
     
     private func createSnapshot() -> NSDiffableDataSourceSnapshot<Section, Item>{

@@ -111,8 +111,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcV-U5-hfB">
-                                <rect key="frame" x="0.0" y="140" width="428" height="786"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zcV-U5-hfB">
+                                <rect key="frame" x="0.0" y="140" width="426" height="786"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzu-Fl-9SI">
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="264"/>
@@ -121,13 +121,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soL-iy-wzL">
-                                        <rect key="frame" x="8" y="308" width="412" height="20.333333333333314"/>
+                                        <rect key="frame" x="8" y="308" width="398" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DY-qd-2Ts">
-                                        <rect key="frame" x="0.0" y="264" width="428" height="29"/>
+                                        <rect key="frame" x="0.0" y="264" width="414" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="29" id="ngq-Mg-9q4"/>
                                         </constraints>
@@ -160,6 +160,7 @@
                             <constraint firstItem="Rzu-Fl-9SI" firstAttribute="width" secondItem="dSw-aT-xej" secondAttribute="width" id="Jhf-Zf-Bqn"/>
                             <constraint firstItem="zcV-U5-hfB" firstAttribute="leading" secondItem="Dff-kr-VSS" secondAttribute="leading" id="WR2-Ge-VpE"/>
                             <constraint firstAttribute="bottom" secondItem="zcV-U5-hfB" secondAttribute="bottom" id="c9v-6h-zmE"/>
+                            <constraint firstItem="soL-iy-wzL" firstAttribute="width" secondItem="Dff-kr-VSS" secondAttribute="width" multiplier="0.962617" id="pdH-AM-IIn"/>
                             <constraint firstItem="zcV-U5-hfB" firstAttribute="trailing" secondItem="Dff-kr-VSS" secondAttribute="trailing" id="wuj-SY-L1s"/>
                         </constraints>
                     </view>
@@ -198,7 +199,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="textViewColor">
-            <color red="0.82700002193450928" green="0.82700002193450928" blue="0.82700002193450928" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

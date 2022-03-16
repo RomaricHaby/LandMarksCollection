@@ -37,8 +37,12 @@ class DataModel {
     func getLandMarksMountains() -> Array<LandMark>{
         var landMarksListMountains = Array<LandMark>()
         
-        for landMark  in landMarksList {
+        for var landMark  in landMarksList {
             if landMark.category == LandMark.Category.mountains {
+                let value = landMark.name
+                let mountian = "⛰️ "
+                
+                landMark.name = "\(mountian) \(value)"
                 landMarksListMountains.append(landMark)
             }
         }
@@ -47,9 +51,15 @@ class DataModel {
     
     func getLandMarksLakes() -> Array<LandMark>{
         var landMarksListMountains = Array<LandMark>()
+    
         
-        for landMark  in landMarksList {
+        for var landMark  in landMarksList {
             if landMark.category == LandMark.Category.lakes {
+                let value = landMark.name
+                let lake = "🏞 "
+                
+                landMark.name = "\(lake) \(value)"
+                
                 landMarksListMountains.append(landMark)
             }
         }
@@ -59,8 +69,12 @@ class DataModel {
     func getLandMarksRivers() -> Array<LandMark>{
         var landMarksListMountains = Array<LandMark>()
         
-        for landMark  in landMarksList {
+        for var landMark  in landMarksList {
             if landMark.category == LandMark.Category.rivers {
+                let value = landMark.name
+                let river = "🌊 "
+                
+                landMark.name = "\(river) \(value)"
                 landMarksListMountains.append(landMark)
             }
         }
