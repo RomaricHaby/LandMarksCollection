@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UICollectionViewController {
     
+    
     enum Section : CaseIterable{
         case largeCell
         case mountains
@@ -141,6 +142,14 @@ class ViewController: UICollectionViewController {
             }
         }
         return layout
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "showDetailLandMark"){
+            if let destination = segue.destination as? DetailLandMarkViewController{
+                destination.landmark = DataModel.sharedInstance.landMarksList[collectionView.indexPath(for: sender as! UICollectionViewCell)!.row]
+            }
+        }
     }
     
 

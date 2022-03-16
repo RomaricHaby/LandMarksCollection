@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08762C6827E1D863009C4BE6 /* DetailLandMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08762C6727E1D863009C4BE6 /* DetailLandMarkViewController.swift */; };
 		08D64D5C27D8BA7900FCC74F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64D5B27D8BA7900FCC74F /* AppDelegate.swift */; };
 		08D64D5E27D8BA7900FCC74F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64D5D27D8BA7900FCC74F /* SceneDelegate.swift */; };
 		08D64D6027D8BA7900FCC74F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D64D5F27D8BA7900FCC74F /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08762C6727E1D863009C4BE6 /* DetailLandMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLandMarkViewController.swift; sourceTree = "<group>"; };
 		08D64D5827D8BA7900FCC74F /* LandMarksCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandMarksCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D64D5B27D8BA7900FCC74F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D64D5D27D8BA7900FCC74F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				08D64D7C27D8E95100FCC74F /* LargeCell.swift */,
 				08D64D7E27D8FB4300FCC74F /* SmallCell.swift */,
+				08762C6727E1D863009C4BE6 /* DetailLandMarkViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				08D64D5E27D8BA7900FCC74F /* SceneDelegate.swift in Sources */,
 				08D64D7D27D8E95100FCC74F /* LargeCell.swift in Sources */,
 				08D64D7627D8BE9600FCC74F /* LandMark.swift in Sources */,
+				08762C6827E1D863009C4BE6 /* DetailLandMarkViewController.swift in Sources */,
 				08D64D7A27D8C11300FCC74F /* DataModel.swift in Sources */,
 				08D64D7F27D8FB4300FCC74F /* SmallCell.swift in Sources */,
 			);
